@@ -86,6 +86,51 @@ content: "";
 clear: both;
 display: block;
 }
+.msr_newslist05 {
+  background-color: #FFFFFF;
+  border-top:1px solid #999999;
+  width: 100%;
+}
+.msr_newslist05 li {
+  border-bottom:1px solid #999999;
+  font-size: 14px;
+}
+.msr_newslist05 li a {
+  box-sizing: border-box;
+  color: #333333;
+  display: table;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  width: 100%;
+}
+.msr_newslist05 li a:hover {
+  background: #EEEEEE;
+  text-decoration: none;
+}
+.msr_newslist05 li time {
+  border-right:1px solid #999999;
+  display: table-cell;
+  padding: 16px;
+  text-align:center;
+  vertical-align: middle;
+  width:14%;
+}
+.msr_newslist05 li .cat {
+  border-right:1px solid #999999;
+  display: table-cell;
+  padding: 16px;
+  text-align:center;
+  vertical-align: middle;
+  width:18%;
+}
+.msr_newslist05 li .ttl {
+  display: table-cell;
+  padding: 16px;
+  vertical-align: middle;
+}
         </style>
       </head>
 <!--ここはHTMLでの記述-->
@@ -96,6 +141,36 @@ display: block;
 <div id="content">
     <h1>僕が猫に襲われた話</h1>
     <p>普通に小学校に向かっていたところ竹藪から突然猫が現れて突進してきたんだ</p>
+    <ul class="msr_newslist05">
+        <li>
+          <a href="http://physi0323.github.io/page1.html">
+            <time datetime="2021-12-7">2021.12.7</time>
+            <p class="cat">お試し</p>
+            <p class="ttl">ページ１</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <time datetime="2016-1-1">2016.01.01</time>
+            <p class="cat">Category</p>
+            <p class="ttl">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <time datetime="2016-1-1">2016.01.01</time>
+            <p class="cat">Category</p>
+            <p class="ttl">テキストテキスト</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <time datetime="2016-1-1">2016.01.01</time>
+            <p class="cat">Category</p>
+            <p class="ttl">テキストテキスト</p>
+          </a>
+        </li>
+      </ul>
 </div>
 <div id="side">
 <div class="menu">
