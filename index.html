@@ -1,3 +1,4 @@
+<!--ここは主にCSSでの書式設定-->
 <html>
     <!DOCTYPE html>
     <html lang=“ja”>
@@ -10,6 +11,15 @@
         }  
         menu {
     max-width: 600px;
+}
+#sample {
+  border: 1px solid #999;
+  width: 140px;
+  text-align: center;
+  padding: 10px;
+  color: #666;
+  background-color: #eee;
+  cursor: pointer;
 }
 
 .menu a {
@@ -71,9 +81,9 @@ content: "";
 clear: both;
 display: block;
 }
- 
         </style>
       </head>
+<!--ここはHTMLでの記述-->
   <body>
       <font color="red">この文字を赤にします。</font><br>
       <strong>さらに強い文章の論理強調</strong> 
@@ -102,21 +112,15 @@ display: block;
         <li><a href="">Link02</a></li>
         <li><a href="">Link03</a></li>
         <li><a href="">Link04</a></li>
-    </ul>
+    </ul> 
 </div>
+<p id="sample">ワンコ</p>
 <div id="footer">
     <img src="Rigeru1.jpg" alt="ワンちゃん" width="186" height="186" />
-  </body>
+    <script>
+    document.getElementById("sample").addEventListener("click", function () {
+        location.replace("Rigeru1.jpg");
+      }, false);
+      </script>
+</body>
 </html>
-<script>
-    function jump(){
-      if (confirm("トップページに戻りますか？")==true)
-        //OKならTOPページにジャンプさせる
-        location.href = "https://ja.wikipedia.org/wiki/%E3%82%A4%E3%83%8C";
-    }
-    </script>
-    
-    <input type="button" name="link" value="TOPへ" onclick="jump()">
-
-
-    
