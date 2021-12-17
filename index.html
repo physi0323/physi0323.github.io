@@ -55,6 +55,22 @@ input {
     height: 54px;
     opacity: 1;
 }
+#wrap {
+width: 1000px;
+}
+#content {
+width: 800px;
+float: right;
+}
+#side {
+width: 180px;
+float: left;
+}
+.clearfix:after {
+content: "";
+clear: both;
+display: block;
+}
  
         </style>
       </head>
@@ -63,6 +79,17 @@ input {
       <strong>さらに強い文章の論理強調</strong> 
     <h1>CSS入門</h1>
     <p>はじめてのCSS</p>
+<div>
+<div id="wrap">
+<div id="content">
+<p>メインコンテンツ</p>
+</div>
+<div id="side">
+<p>サイドバー</p>
+<div id="footer">
+<p>フッター</p>
+</div>
+
     <div class="menu">
         <label for="menu_bar01">アコーディオン１</label>
         <input type="checkbox" id="menu_bar01" />
