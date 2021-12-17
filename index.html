@@ -76,6 +76,11 @@ float: right;
 width: 180px;
 float: left;
 }
+#footer {
+    background: #333333;
+    color: #ffffff;
+    height: 60px;
+}
 .clearfix:after {
 content: "";
 clear: both;
@@ -85,15 +90,12 @@ display: block;
       </head>
 <!--ここはHTMLでの記述-->
   <body>
-      <font color="red">ワンコ</font><br>
-      <strong>ワンコ</strong> 
-    <h1>ワンコ</h1>
-    <p>ワンコ</p>
 <div>
 <div id="wrap">
+    <h1>犬にかまれたことは無いけれど猫に襲われたことがある</h1>
 <div id="content">
-    <h1>ワンコ</h1>
-    <p>ワンコ</p>
+    <h1>僕が猫に襲われた話</h1>
+    <p>普通に小学校に向かっていたところ竹藪から突然猫が現れて突進してきたんだ</p>
 </div>
 <div id="side">
 <div class="menu">
@@ -105,15 +107,16 @@ display: block;
         <li><a href="">Link03</a></li>
         <li><a href="">Link04</a></li>
     </ul>
-
-</div>
 <p id="sample">ワンコ</p>
-<div id="footer">
-    <img src="Rigeru1.jpg" alt="ワンちゃん" width="186" height="186" />
-    <script>
-    document.getElementById("sample").addEventListener("click", function () {
-        location.replace("Rigeru1.jpg");
-      }, false);
-      </script>
+<img src="Rigeru1.jpg" alt="ワンちゃん" width="186" height="186" />
+</div>
+<script>
+document.getElementById("sample").addEventListener("click", function () {
+    location.replace("Rigeru1.jpg");
+  }, false);
+  </script>
+  <div id="footer">
+    <p>このページはまだ完成していないけれどもデスモスチルス用に作っているよ</p>
+  </div>
 </body>
 </html>
