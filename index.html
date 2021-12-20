@@ -66,7 +66,14 @@ input {
     opacity: 1;
 }
 #wrap {
-width: 1000px;
+position: fixed; /* ヘッダーを固定する */
+top: 0; /* 上部から配置の基準位置を決める */
+left: 0; /* 左から配置の基準位置を決める */
+width: 1000px; /* ヘッダーの横幅を指定する */
+height: 50px; /* ヘッダーの高さを指定する */
+padding: 10px; /* ヘッダーの余白を指定する(上下左右) */
+background-color: #ffffff; /* ヘッダーの背景色を指定する */
+color: #000000; /* フォントの色を指定する */
 }
 #content {
 width: 800px;
@@ -77,9 +84,14 @@ width: 180px;
 float: left;
 }
 #footer {
-    background: #333333;
-    color: #ffffff;
-    height: 200px;
+position: fixed; /* フッターを固定する */
+bottom: 0; /* 上部から配置の基準位置を決める */
+left: 0; /* 左から配置の基準位置を決める */
+width: 100%; /* フッターの横幅を指定する */
+height: 35px; /* フッターの高さを指定する */
+padding:10px; /* フッター内側の余白を指定する(上下左右) */
+background-color: #ffffff; /* フッターの背景色を指定する */
+color: #000000; /* フッターのフォントの色を指定する */
 }
 .clearfix:after {
 content: "";
@@ -154,7 +166,7 @@ display: block;
   <body>
 <div>
 <div id="wrap">
-    <h1>犬にかまれたことは無いけれど猫に襲われたことがある</h1>
+    <h1>横浜国立大学手話サークルデスモスチルス</h1>
 <div id="content">
     <div class="sample_box1">
         <h1>僕が猫に襲われた話</h1>
