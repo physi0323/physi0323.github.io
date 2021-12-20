@@ -12,6 +12,59 @@
         menu {
     max-width: 600px;
 }
+.container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.main-contents {
+  width: 70%;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+}
+.right-menu {
+  width: 25%;
+  padding: 10px;
+  background-color: rgb(139, 139, 139);
+}
+#wrap {
+position: fixed; /* ヘッダーを固定する */
+top: 0; /* 上部から配置の基準位置を決める */
+left: 0; /* 左から配置の基準位置を決める */
+width: 100%; /* ヘッダーの横幅を指定する */
+height: 50px; /* ヘッダーの高さを指定する */
+padding: 10px; /* ヘッダーの余白を指定する(上下左右) */
+background-color: #ffffff; /* ヘッダーの背景色を指定する */
+color: #000000; /* フォントの色を指定する */
+}
+#footer {
+position: fixed; /* フッターを固定する */
+bottom: 0; /* 上部から配置の基準位置を決める */
+left: 0; /* 左から配置の基準位置を決める */
+width: 100%; /* フッターの横幅を指定する */
+height: 35px; /* フッターの高さを指定する */
+padding:10px; /* フッター内側の余白を指定する(上下左右) */
+background-color: #ffffff; /* フッターの背景色を指定する */
+color: #000000; /* フッターのフォントの色を指定する */
+}
+.news-list{
+  list-style: none outside;
+  margin: 0;
+  padding: 0;
+}
+.news-list .item a{
+  display: flex;
+  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  text-decoration: none;
+  color: #333;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  padding: 20px 20px;
+}
+.news-list .item:first-child a{
+  border-top: 1px solid #CCC;
+}
 #sample {
   border: 1px solid #999;
   width: 140px;
@@ -21,23 +74,6 @@
   background-color: #eee;
   cursor: pointer;
 }
-.container {
-  width: 90%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-}
-.main-contents {
-  width: 70%;
-  padding: 10px;
-  background-color: #ccc;
-}
-.right-menu {
-  width: 30%;
-  padding: 10px;
-  background-color: #faa;
-}
-
 .menu a {
     display: block;
     padding: 20px;
@@ -81,93 +117,12 @@ input {
     height: 54px;
     opacity: 1;
 }
-#wrap {
-position: fixed; /* ヘッダーを固定する */
-top: 0; /* 上部から配置の基準位置を決める */
-left: 0; /* 左から配置の基準位置を決める */
-width: 100%; /* ヘッダーの横幅を指定する */
-height: 50px; /* ヘッダーの高さを指定する */
-padding: 10px; /* ヘッダーの余白を指定する(上下左右) */
-background-color: #ffffff; /* ヘッダーの背景色を指定する */
-color: #000000; /* フォントの色を指定する */
-}
-#footer {
-position: fixed; /* フッターを固定する */
-bottom: 0; /* 上部から配置の基準位置を決める */
-left: 0; /* 左から配置の基準位置を決める */
-width: 100%; /* フッターの横幅を指定する */
-height: 35px; /* フッターの高さを指定する */
-padding:10px; /* フッター内側の余白を指定する(上下左右) */
-background-color: #ffffff; /* フッターの背景色を指定する */
-color: #000000; /* フッターのフォントの色を指定する */
-}
 .clearfix:after {
 content: "";
 clear: both;
 display: block;
 }
-.msr_newslist05 {
-  background-color: #FFFFFF;
-  border-top:1px solid #999999;
-  width: 95%;
-}
-.msr_newslist05 li {
-  border-bottom:1px solid #999999;
-  font-size: 14px;
-}
-.msr_newslist05 li a {
-  box-sizing: border-box;
-  color: #333333;
-  display: table;
-  text-decoration: none;
-  transition: 0.2s ease-in-out;
-  -o-transition: 0.2s ease-in-out;
-  -moz-transition: 0.2s ease-in-out;
-  -webkit-transition: 0.2s ease-in-out;
-  width: 100%;
-}
-.msr_newslist05 li a:hover {
-  background: #EEEEEE;
-  text-decoration: none;
-}
-.msr_newslist05 li time {
-  border-right:1px solid #999999;
-  display: table-cell;
-  padding: 16px;
-  text-align:center;
-  vertical-align: middle;
-  width:14%;
-}
-.msr_newslist05 li .cat {
-  border-right:1px solid #999999;
-  display: table-cell;
-  padding: 16px;
-  text-align:center;
-  vertical-align: middle;
-  width:18%;
-}
-.msr_newslist05 li .ttl {
-  display: table-cell;
-  padding: 16px;
-  vertical-align: middle;
-}
-.sample_box1 {
-    padding: 1em 1.5em;
-    margin: 0.0em 0;
-    border: solid 2px #ffffff;/*線*/
-}
-.sample_box7 {
-    padding: 1em 1.5em;
-    margin: 2em 0;
-    background-color:#fff0f5;/*背景色*/
-    border:1px solid #9370db;/*線*/
-    color:#000000;/*文字色*/
-    border-radius: 10px;/*角の丸み*/
-}
-.sample_box7 p {
-    margin: 0; 
-    padding: 0;
-}
+
         </style>
       </head>
 <!--ここはHTMLでの記述-->
@@ -177,45 +132,28 @@ display: block;
 <div>
 <div class="container">
         <div class="main-contents">
-        メインコンテンツ
-        <div class="sample_box1">
-            <h1>僕が猫に襲われた話</h1>
-        </div>
-        <div class="sample_box7">
-            <h2>小学校に向かっていたところ竹藪から突然猫が現れて突進してきた</h2>
-        </div>
-        <ul class="msr_newslist05">
-            <li>
-              <a href="http://physi0323.github.io/page1.html">
-                <time datetime="2021-12-7">2021.12.7</time>
-                <p class="cat">お試し</p>
-                <p class="ttl">ページ１</p>
-              </a>
+        <h2>手話ニュース＆最近あったこと</h2>
+        <ul class="news-list">
+            <li class="item">
+                <a href="#">
+                    <p class="date">2021/12/17</p>
+                    <p class="title">　今日は初めてHTMLをいじりました</p>
+                </a>
             </li>
-            <li>
-              <a href="#">
-                <time datetime="2016-1-1">2016.01.01</time>
-                <p class="cat">Category</p>
-                <p class="ttl">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
-              </a>
+            <li class="item">
+                <a href="#">
+                    <p class="date">2020/12/18</p>
+                    <p class="title">　Github上にホームページを公開することが出来ました。とてもうれしいです</p>
+                </a>
             </li>
-            <li>
-              <a href="#">
-                <time datetime="2016-1-1">2016.01.01</time>
-                <p class="cat">Category</p>
-                <p class="ttl">テキストテキスト</p>
-              </a>
+            <li class="item">
+                <a href="#">
+                    <p class="date">2020/12/19</p>
+                    <p class="title">　色々な機能を付けたいと考えていますがなかなか難しそうです...頑張ります</p>
+                </a>
             </li>
-            <li>
-              <a href="#">
-                <time datetime="2016-1-1">2016.01.01</time>
-                <p class="cat">Category</p>
-                <p class="ttl">テキストテキスト</p>
-              </a>
-            </li>
-          </ul>
+        </ul>
     </div>
-
         <div class="right-menu">
         右メニュー
         <div class="menu">
