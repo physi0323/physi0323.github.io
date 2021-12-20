@@ -12,7 +12,7 @@
         menu {
     max-width: 600px;
 }
-
+/*各要素の決定*/
 .container {
   width: 100%;
   margin: 0 auto;
@@ -49,6 +49,17 @@ padding:10px; /* フッター内側の余白を指定する(上下左右) */
 background-color: #ffffff; /* フッターの背景色を指定する */
 color: #000000; /* フッターのフォントの色を指定する */
 }
+/*スクロールバー*/
+.contain {
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+}
+.area {
+  scroll-snap-align: none;
+  height: 100vh;
+}
+/*ニュースリスト*/
 .news-list{
   list-style: none outside;
   margin: 0;
@@ -67,7 +78,7 @@ color: #000000; /* フッターのフォントの色を指定する */
   border-top: 1px solid #CCC;
 }
 
-
+/*右アコーディオンメニュー*/
 .menu a {
     display: block;
     padding: 10px;
@@ -113,6 +124,7 @@ content: "";
 clear: both;
 display: block;
 }
+/*装飾*/
 .pretty {
   background: #fcebec;
   box-shadow: 0px 0px 0px 3px #ffffff;
@@ -134,6 +146,8 @@ display: block;
         <div class="pretty">
         <h2>手話ニュース＆最近あったこと</h2>
         <ul class="news-list">
+            <div class="contain">
+            <section class="area">
             <li class="item">
                 <a href="#">
                     <p class="date"><h3>2021/12/17</h3></p>
