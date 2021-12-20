@@ -21,6 +21,22 @@
   background-color: #eee;
   cursor: pointer;
 }
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.main-contents {
+  width: 70%;
+  padding: 10px;
+  background-color: #ccc;
+}
+.right-menu {
+  width: 30%;
+  padding: 10px;
+  background-color: #faa;
+}
 
 .menu a {
     display: block;
@@ -69,19 +85,11 @@ input {
 position: fixed; /* ヘッダーを固定する */
 top: 0; /* 上部から配置の基準位置を決める */
 left: 0; /* 左から配置の基準位置を決める */
-width: 1000px; /* ヘッダーの横幅を指定する */
+width: 100%; /* ヘッダーの横幅を指定する */
 height: 50px; /* ヘッダーの高さを指定する */
 padding: 10px; /* ヘッダーの余白を指定する(上下左右) */
 background-color: #ffffff; /* ヘッダーの背景色を指定する */
 color: #000000; /* フォントの色を指定する */
-}
-#content {
-width: 800px;
-float: right;
-}
-#side {
-width: 180px;
-float: left;
 }
 #footer {
 position: fixed; /* フッターを固定する */
@@ -164,65 +172,71 @@ display: block;
       </head>
 <!--ここはHTMLでの記述-->
   <body>
-<div>
 <div id="wrap">
     <h1>横浜国立大学手話サークルデスモスチルス</h1>
-<div id="content">
-    <div class="sample_box1">
-        <h1>僕が猫に襲われた話</h1>
+<div>
+<div class="container">
+        <div class="main-contents">
+        メインコンテンツ
+        <div class="sample_box1">
+            <h1>僕が猫に襲われた話</h1>
+        </div>
+        <div class="sample_box7">
+            <h2>小学校に向かっていたところ竹藪から突然猫が現れて突進してきた</h2>
+        </div>
+        <ul class="msr_newslist05">
+            <li>
+              <a href="http://physi0323.github.io/page1.html">
+                <time datetime="2021-12-7">2021.12.7</time>
+                <p class="cat">お試し</p>
+                <p class="ttl">ページ１</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <time datetime="2016-1-1">2016.01.01</time>
+                <p class="cat">Category</p>
+                <p class="ttl">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <time datetime="2016-1-1">2016.01.01</time>
+                <p class="cat">Category</p>
+                <p class="ttl">テキストテキスト</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <time datetime="2016-1-1">2016.01.01</time>
+                <p class="cat">Category</p>
+                <p class="ttl">テキストテキスト</p>
+              </a>
+            </li>
+          </ul>
     </div>
-    <div class="sample_box7">
-        <h2>小学校に向かっていたところ竹藪から突然猫が現れて突進してきた</h2>
-    </div>
-    <ul class="msr_newslist05">
-        <li>
-          <a href="http://physi0323.github.io/page1.html">
-            <time datetime="2021-12-7">2021.12.7</time>
-            <p class="cat">お試し</p>
-            <p class="ttl">ページ１</p>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <time datetime="2016-1-1">2016.01.01</time>
-            <p class="cat">Category</p>
-            <p class="ttl">テキストテキストテキストテキストテキストテキストテキストテキスト</p>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <time datetime="2016-1-1">2016.01.01</time>
-            <p class="cat">Category</p>
-            <p class="ttl">テキストテキスト</p>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <time datetime="2016-1-1">2016.01.01</time>
-            <p class="cat">Category</p>
-            <p class="ttl">テキストテキスト</p>
-          </a>
-        </li>
-      </ul>
-</div>
-<div id="side">
-<div class="menu">
-    <label for="menu_bar01"><h1>ワンコ</h1></label>
-    <input type="checkbox" id="menu_bar01" />
-    <ul id="links01">
-        <li><a href="https://ja.wikipedia.org/wiki/%E3%82%A4%E3%83%8C">ワンちゃん</a></li>
-        <li><a href="http://physi0323.github.io/page1.html">Link02</a></li>
-        <li><a href="">Link03</a></li>
-        <li><a href="">Link04</a></li>
-    </ul>
-<p id="sample">ワンコ</p>
-<img src="Rigeru1.jpg" alt="ワンちゃん" width="186" height="186" />
-</div>
-<script>
-document.getElementById("sample").addEventListener("click", function () {
-    location.replace("Rigeru1.jpg");
-  }, false);
-  </script>
+
+        <div class="right-menu">
+        右メニュー
+        <div class="menu">
+            <label for="menu_bar01"><h1>ワンコ</h1></label>
+            <input type="checkbox" id="menu_bar01" />
+            <ul id="links01">
+                <li><a href="https://ja.wikipedia.org/wiki/%E3%82%A4%E3%83%8C">ワンちゃん</a></li>
+                <li><a href="http://physi0323.github.io/page1.html">Link02</a></li>
+                <li><a href="">Link03</a></li>
+                <li><a href="">Link04</a></li>
+            </ul>
+        <p id="sample">ワンコ</p>
+        <img src="Rigeru1.jpg" alt="ワンちゃん" width="186" height="186" />
+        </div>
+        <script>
+        document.getElementById("sample").addEventListener("click", function () {
+            location.replace("Rigeru1.jpg");
+          }, false);
+          </script>
+        </div>
+      </div>
   <div id="footer">
     <h2>このページはまだ完成していないけれどもデスモスチルス用に作っているよ</h2>
   </div>
