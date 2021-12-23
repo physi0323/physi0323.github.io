@@ -35,8 +35,13 @@
   display: flex;
   justify-content: space-between;
 }
+.side-contents {
+  width: 20%;
+  padding: 10px;
+  background-color: #bbdcf0;
+}
 .main-contents {
-  width: 1100%;
+  width: 80%;
   padding: 10px;
   background-color: rgb(255, 255, 255);
 }
@@ -130,6 +135,13 @@ display: block;
   background: #bbdcf0;
   box-shadow: 0px 0px 0px 3px #bbdcf0;
   border: dashed 2px rgb(255, 255, 255);
+  padding: 0.2em 0.5em;
+  margin: 3px;
+}
+.pretty-2 {
+  background: #bbdcf0;
+  box-shadow: 0px 0px 0px 3px #bbdcf0;
+  border: dashed 4px rgb(255, 255, 255);
   padding: 0.2em 0.5em;
   margin: 3px;
 }
@@ -309,7 +321,8 @@ display: block;
         </ul>
     </div>
 </div>
-    <div class="pretty">
+    <div class="side-contents">
+    <div class="pretty-2">
         <div class="menu">
             <label for="menu_bar01"><h1>MEMU</h1></label>
             <input type="checkbox" id="menu_bar01" />
@@ -319,6 +332,8 @@ display: block;
                 <li><a href=""><h4>手話クイズ</h4></a></li>
                 <li><a href=""><h4>お問い合わせ</h4></a></li>
             </ul>
-</div>
+        </div>
+    </div>
+    </div>
 </body>
 </html>
