@@ -13,6 +13,7 @@
     max-width: 600px;
     
 }
+
 /*斜線の背景*/
 .bg_pattern {
   position: fixed;
@@ -36,15 +37,15 @@
   justify-content: space-between;
 }
 .main-contents {
-  width: 90%;
+  width: 1100%;
   padding: 10px;
   background-color: rgb(255, 255, 255);
 }
 #wrap {
-position: fixed; /* ヘッダーを固定する */
+position: relative; /* ヘッダーを固定する */
 top: 0; /* 上部から配置の基準位置を決める */
-left: 0; /* 左から配置の基準位置を決める */
-width: 100%; /* ヘッダーの横幅を指定する */
+right:25px; /* 左から配置の基準位置を決める */
+width: 104%; /* ヘッダーの横幅を指定する */
 height: 50px; /* ヘッダーの高さを指定する */
 padding: 10px; /* ヘッダーの余白を指定する(上下左右) */
 background: #4ad5ff;/* ヘッダーの背景色を指定する */
@@ -52,9 +53,9 @@ color: #000000; /* フォントの色を指定する */
 }
 #footer {
 position: fixed; /* フッターを固定する */
-bottom: 0; /* 上部から配置の基準位置を決める */
-left: 0; /* 左から配置の基準位置を決める */
-width: 98.3%; /* フッターの横幅を指定する */
+top: 700px; /* 上部から配置の基準位置を決める */
+left: -2px; /* 左から配置の基準位置を決める */
+width: 100%; /* フッターの横幅を指定する */
 height: 35px; /* フッターの高さを指定する */
 padding:10px; /* フッター内側の余白を指定する(上下左右) */
 background-color: #ffffff; /* フッターの背景色を指定する */
