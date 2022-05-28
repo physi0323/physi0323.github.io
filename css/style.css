@@ -1,23 +1,5 @@
 @charset "UTF-8";
 
-/*ニュースリスト*/
-
-.contain {
-    overflow: auto;
-    scroll-snap-type: y mandatory;
-    height: 70vh;
-  }
-  .area {
-    scroll-snap-align: none;
-    height: 100vh;
-  }
-  /*ニュースリスト*/
-  .news-list{
-    list-style: none outside;
-    margin: 0;
-    padding: 0;
-  }
-
 /* 共通部分
 ------------------------------- */
 html {
