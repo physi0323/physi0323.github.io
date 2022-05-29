@@ -17,7 +17,7 @@ img {
     max-width: 100%;
 }
 .wrapper {
-    max-width: 1100px;
+    max-width: 500px;
     margin: 0 auto;
     padding: 0 4%;
 }
@@ -132,7 +132,7 @@ article {
 .post-date {
     background: rgb(195, 145, 145);
     border-radius: 50%;
-    color: rgb(87, 46, 46);
+    color: rgb(255, 255, 255);
     width: 100px;
     height: 100px;
     font-size: 1.800rem;
@@ -292,7 +292,7 @@ input[type="submit"] {
 /* フッター
 ------------------------------- */
 footer {
-    background: #432;
+    background: rgb(76, 217, 249);
     text-align: center;
     padding: 26px 0;
 }
