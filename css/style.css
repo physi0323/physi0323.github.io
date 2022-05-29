@@ -282,6 +282,7 @@ input[type="submit"] {
 }
 #sns .wrapper {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 #sns .sub-title {
