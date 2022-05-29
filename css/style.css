@@ -286,7 +286,7 @@ input[type="submit"] {
     justify-content: space-between;
 }
 #sns .sub-title {
-    margin-bottom: 30px;
+    margin: 30px;
 }
 .sns-box {
     width: 30%;
