@@ -309,9 +309,8 @@ footer p {
         font-size: 2.5rem;
     }
     .page-header {
-        max-height: 30px;
         flex-direction: column;
-        align-items: end;
+        align-items: center;
     }
 
     /* HEADER */
