@@ -281,15 +281,14 @@ input[type="submit"] {
     padding: 2% 0;
 }
 #sns .wrapper {
+    text-align: right;
     display: flex;
     justify-content: space-between;
 }
 #sns .sub-title {
-    text-align: center;
     margin-bottom: 30px;
 }
 .sns-box {
-    text-align: center;
     width: 30%;
 }
 
