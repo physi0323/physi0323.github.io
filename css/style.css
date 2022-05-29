@@ -108,8 +108,8 @@ iframe {
 /* NEWS
 ------------------------------- */
 #news {
-    background-image: url(/images/news-bg.jpg);
-    height: 80px;
+    background-image: url(/images/handsign.jpg);
+    height: 120px;
     margin-bottom: 40px;
 }
 #news .page-title {
