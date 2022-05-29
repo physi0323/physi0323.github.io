@@ -169,7 +169,7 @@ article p {
 
 /* サイドバー */
 aside {
-    width: 30%;
+    width: 40%;
 }
 .sub-menu {
     margin-bottom: 60px;
@@ -281,7 +281,6 @@ input[type="submit"] {
     padding: 2% 0;
 }
 #sns .wrapper {
-    text-align: right;
     display: flex;
     justify-content: space-between;
 }
@@ -289,7 +288,6 @@ input[type="submit"] {
     margin-bottom: 30px;
 }
 .sns-box {
-    margin-left: 10px;
     width: 20%;
 }
 
