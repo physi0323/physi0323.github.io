@@ -311,7 +311,7 @@ footer p {
     .page-header {
         max-height: 30px;
         flex-direction: column;
-        align-items: center;
+        align-items: bottom;
     }
 
     /* HEADER */
