@@ -108,7 +108,7 @@ iframe {
 /* NEWS
 ------------------------------- */
 #news {
-    
+
     background-image: url(/images/handsign.jpg);
     height: 160px;
     margin-bottom: 40px;
@@ -288,7 +288,7 @@ input[type="submit"] {
     margin-bottom: 30px;
 }
 .sns-box {
-    width: 30%;
+    width: 20%;
 }
 
 /* フッター
