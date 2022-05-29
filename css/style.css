@@ -285,10 +285,11 @@ input[type="submit"] {
     justify-content: space-between;
 }
 #sns .sub-title {
+    text-align: center;
     margin-bottom: 30px;
 }
 .sns-box {
-    text-align: right;
+    text-align: center;
     width: 30%;
 }
 
