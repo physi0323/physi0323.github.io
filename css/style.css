@@ -289,8 +289,8 @@ input[type="submit"] {
     margin-bottom: 30px;
 }
 .sns-box {
-    margin: 0%;
-    width: 30%;
+    margin-left: 10px;
+    width: 20%;
 }
 
 /* フッター
